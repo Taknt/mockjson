@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css"
+			rel="stylesheet"
+		/>
+		<!-- CUSTOM STYLES -->
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Website</title>
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./index.html">KazBook</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html" data-tag="nav-home"> </a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="./catalog.html"
+							data-tag="nav-catalog"
+						></a>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="./profile.html"
+							data-tag="nav-profile"
+						></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link nav-langs dropdown-toggle"
+							id="dropdown09"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							><span class="flag-icon flag-icon-gb"> </span> English</a
+						>
+						<div
+							id="change-lang"
+							class="dropdown-menu"
+							aria-labelledby="dropdown09"
+						>
+							<a class="nav-langs dropdown-item"
+								><span class="flag-icon flag-icon-ru"> </span> Русский</a
+							>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="./login.html" data-tag="nav-login"> </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./reg.html" data-tag="nav-reg"></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- CUSTOM HEADER -->
+		<header class="welcome mb-4">
+			<div class="container">
+				<div class="header-caption">
+					<h3 data-tag="welcome-h3"></h3>
+					<hr />
+					<p class="m-4" data-tag="welcome-p"></p>
+					<a href="#carouselExampleCaptions" data-tag="welcome-a"> </a>
+				</div>
+			</div>
+		</header>
+
+		<!-- BOOTSTRAP CAROUSEL -->
+		<h2 class="text-center pb-2" data-tag="car-section-title"></h2>
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleCaptions"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/car1.jpg" class="d-block w-100" />
+					<div class="carousel-caption d-none d-md-block">
+						<h1 data-tag="car-title1"></h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./img/car2.jpg" class="d-block w-100" />
+					<div class="carousel-caption d-none d-md-block">
+						<h1 data-tag="car-title2"></h1>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./img/car3.jpg" class="d-block w-100" />
+					<div class="carousel-caption d-none d-md-block">
+						<h1 data-tag="car-title3"></h1>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleCaptions"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<!-- BOOTSTRAP COLLAPSE SECTION -->
+		<section class="collapse-section">
+			<div class="container">
+				<div class="collapse-caption">
+					<h2 class="text-center" data-tag="col-section-title"></h2>
+					<p class="text-center p-2 mx-auto" data-tag="col-p"></p>
+				</div>
+				<div class="accordion" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button
+									class="btn btn-link btn-block text-left"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+									data-tag="col-title1"
+								></button>
+							</h2>
+						</div>
+
+						<div
+							id="collapseOne"
+							class="collapse show"
+							aria-labelledby="headingOne"
+							data-parent="#accordionExample"
+						>
+							<div class="card-body" data-tag="col-body1"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button
+									class="btn btn-link btn-block text-left collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+									data-tag="col-title2"
+								></button>
+							</h2>
+						</div>
+						<div
+							id="collapseTwo"
+							class="collapse"
+							aria-labelledby="headingTwo"
+							data-parent="#accordionExample"
+						>
+							<div class="card-body" data-tag="col-body2"></div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button
+									class="btn btn-link btn-block text-left collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+									data-tag="col-title3"
+								></button>
+							</h2>
+						</div>
+						<div
+							id="collapseThree"
+							class="collapse"
+							aria-labelledby="headingThree"
+							data-parent="#accordionExample"
+						>
+							<div class="card-body" data-tag="col-body3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="text-center py-3">
+			<div class="d-flex flex-column container">
+				<p class="m-0" data-tag="footer-order"></p>
+				<p class="m-0">+7(666)-666-66-66</p>
+			</div>
+		</footer>
+
+		<!-- BOOSTRAP SCRIPTS -->
+		<script src="./js/translate.js"></script>
+		<script src="./js/app.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

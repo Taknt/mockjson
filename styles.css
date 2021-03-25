@@ -1,0 +1,73 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.nav-langs {
+	cursor: pointer;
+}
+.carousel {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+/* HEADER */
+header {
+	padding: 100px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-image: url("../img/welcome-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.header-caption {
+	width: 70%;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 30px 0;
+}
+.header-caption h4 {
+	text-transform: uppercase;
+	color: brown;
+}
+.header-caption hr {
+	color: #666;
+	background-color: #666;
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.header-caption a {
+	padding: 8px 20px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: brown;
+	border: 2px solid brown;
+}
+.header-caption a:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
+.collapse-section {
+	color: #fff;
+	padding: 40px 0;
+	background-image: url("../img/collapse-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.card {
+	color: #000;
+}
+.collapse-caption {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+footer {
+	background-color: #f4f4f4;
+}
